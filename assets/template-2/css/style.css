@@ -1,3 +1,12 @@
+/*Default style start*/
+.section-padding{
+    padding: 50px 0;
+}
+:root{
+    --primary-color: #EE3333
+}
+/*Default style end*/
+/*header style start*/
 .header-area {
     position: absolute;
     width: 100%;
@@ -24,7 +33,7 @@
     opacity: .6;
     z-index: -1;
 }
-
+/*header style end*/
 
 /*slider area start*/
 
@@ -47,7 +56,7 @@
 
 .slider-cont h2 {
     text-transform: capitalize;
-    color: #EE3333;
+    color: var(--primary-color);
 }
 
 .slider-cont h1 {
@@ -57,7 +66,7 @@
 }
 
 .slider-btn-style {
-    border-color: #EE3333;
+    border-color: var(--primary-color);
     padding: 15px 30px;
 }
 
@@ -76,7 +85,7 @@
     width: 90%;
     height: 100%;
     background: #f4f4f4;
-    border: 2px solid #EE3333;
+    border: 2px solid var(--primary-color);
     opacity: .5;
     z-index: -1;
     transform: rotate(45deg)
@@ -90,7 +99,7 @@
     width: 90%;
     height: 100%;
     background: #f4f4f4;
-    border: 2px solid #EE3333;
+    border: 2px solid var(--primary-color);
     opacity: .5;
     z-index: -1;
     transform: rotate(-45deg)
@@ -112,8 +121,59 @@
 }
 
 #template-2-slider .owl-dot.active {
-    background: red
+    background: var(--primary-color)
+}
+/*slider area end*/
+
+/*promotions area start*/
+.promo-thumb img {
+    width: 100%;
+}
+.single-promotion-item {
+    position: relative;
 }
 
+.promo-cont {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    padding: 30px 10px;
+    z-index: 1;
+}
 
-/*slider area end*/
+.promo-cont:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    opacity: .5;
+}
+.promo-cont h3 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.promo-cont p {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.promo-cont p span {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: large;
+}
+
+.shop-link a {
+    padding: 10px 15px;
+    color: #fff;
+}
+/*promotions area end*/

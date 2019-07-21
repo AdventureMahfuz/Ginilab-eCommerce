@@ -29,12 +29,12 @@
         $('#template-2-slider').on('translate.owl.carousel', function() {
             $('.slider-cont h2').removeClass('animated bounceInDown').css('opacity', '0');
             $('.slider-cont h1').removeClass('animated fadeInRight').css('opacity', '0');
-            $('.slider-btn-style').removeClass('animated fadeInUp').css('opacity', '0');
+            $('#template-2-slider .slider-btn-style').removeClass('animated fadeInUp').css('opacity', '0');
         });
         $('#template-2-slider').on('translated.owl.carousel', function() {
             $('.slider-cont h2').addClass('animated bounceInDown').css('opacity', '1');
             $('.slider-cont h1').addClass('animated fadeInRight').css('opacity', '1');
-            $('.slider-btn-style').addClass('animated fadeInUp').css('opacity', '1');
+            $('#template-2-slider .slider-btn-style').addClass('animated fadeInUp').css('opacity', '1');
         });
     });
 })(jQuery);
