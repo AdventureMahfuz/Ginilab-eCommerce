@@ -25,7 +25,9 @@
 
 
     <!-- template 2 assets start -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/template-2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/template-2/css/jquery.exzoom.css">
     <link rel="stylesheet" href="assets/template-2/css/style.css">
     <!-- template 2 assets end -->
 
@@ -344,27 +346,40 @@
         <div class="container">
             <div class="featured-products">
                 <div class="row">
+                    <div class="col-12">
+                        <div class="section-title text-center">
+                            <h1>featured products</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-md-3">
                         <div class="single-feat-product">
                             <div class="product-thumb">
                                 <img src="assets/template-2/images/feat-1.jpg" alt="">
                                 <div class="notice">
-                                    <span>new</span>
-                                    <p class="discount">50% off</p>
+                                    <p>50% off</p>
+                                </div>
+                                <div class="quick-view-btn">
+                                    <a data-toggle="modal" data-target=".quick-view-popup" href="#"><i class="fa fa-eye"></i>quick view</a>
                                 </div>
                             </div>
-                            <div class="product-info">
+                            <div class="product-info text-center">
                                 <div class="product-rating">
                                     <ul>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
+                                        <li><span>(55 review)</span></li>
                                     </ul>
                                 </div>
                                 <div class="product-title">
-                                    <h4>product title here</h4>
+                                    <a href="#"><h4>product title will be appear here</h4></a>
+                                </div>
+                                <div class="product-price">
+                                    <p><del>$ 10.00</del><span>$ 5.00</span></p>
                                 </div>
                             </div>
                             <div class="buy-option text-center">
@@ -378,6 +393,568 @@
                                     <i class="fa fa-signal"></i>
                                 </div>
                             </div>
+
+
+                            <!-- Quick View Modal -->
+                            <div class="modal quick-view-popup">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <!--<div class="modal-header">
+                                        </div>-->
+                                            <button type="button" class="close-popup" data-dismiss="modal">close &times;</button>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <div class="product-thumb">
+                                                            <div class="exzoom hidden" id="id-1">
+                                                                <!-- Images -->
+                                                                <div class="exzoom_img_box">
+                                                                    <ul class='exzoom_img_ul'>
+                                                                        <li><img src="assets/template-2/images/feat-1.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-2.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-3.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-4.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-5.jpg" /></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <!-- <a href="https://www.jqueryscript.net/tags.php?/Thumbnail/">Thumbnail</a> Nav-->
+                                                                <div class="exzoom_nav"></div>
+                                                                <!-- Nav Buttons -->
+                                                                <p class="exzoom_btn">
+                                                                    <a href="javascript:void(0);" class="exzoom_prev_btn"><i class="fa fa-angle-left"></i></a>
+                                                                    <a href="javascript:void(0);" class="exzoom_next_btn"><i class="fa fa-angle-right"></i></a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <div class="product-details">
+                                                            <div class="product-title">
+                                                                <a href="#"><h4>product title will be appear here</h4></a>
+                                                            </div>
+                                                            <div class="product-rating">
+                                                                <ul>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li><span>(55 review)</span></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="product-description">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias at corporis eos eum fugit, id minus nostrum, perspiciatis qui recusandae sequi totam, vitae. Ad adipisci amet asperiores aut dignissimos enim eos exercitationem facilis laudantium modi nam nihil odio odit officiis, omnis pariatur porro praesentium quos ratione reprehenderit, sit ut!</p>
+                                                            </div>
+                                                            <div class="product-price">
+                                                                <p>price: <del>$ 10.00</del><span>$ 5.00</span></p>
+                                                            </div>
+                                                            <div class="availability">
+                                                                <p>Availability: In stock</p>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <div class="quantity">
+                                                                        <div class="item-counter">
+                                                                            <form>
+                                                                                <div class="minus">
+                                                                                    <i class="fa fa-minus"></i>
+                                                                                </div>
+                                                                                <div class="number-show">
+                                                                                    <div class="form-field">
+                                                                                        <input type="text" class="form-control item_count" value="1">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="plus">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <div class="buy-option text-center">
+                                                                        <div class="wishlist">
+                                                                            <i class="fa fa-heart"></i>
+                                                                        </div>
+                                                                        <div class="add-to-cart-btn">
+                                                                            <p><i class="fa fa-shopping-bag"></i> add to cart</p>
+                                                                        </div>
+                                                                        <div class="compare">
+                                                                            <i class="fa fa-signal"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-feat-product">
+                            <div class="product-thumb">
+                                <img src="assets/template-2/images/feat-2.jpg" alt="">
+                                <div class="notice">
+                                    <p>50% off</p>
+                                </div>
+                                <div class="quick-view-btn">
+                                    <a data-toggle="modal" data-target=".quick-view-popup" href="#"><i class="fa fa-eye"></i>quick view</a>
+                                </div>
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-rating">
+                                    <ul>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><span>(55 review)</span></li>
+                                    </ul>
+                                </div>
+                                <div class="product-title">
+                                    <a href="#"><h4>product title will be appear here</h4></a>
+                                </div>
+                                <div class="product-price">
+                                    <p><del>$ 10.00</del><span>$ 5.00</span></p>
+                                </div>
+                            </div>
+                            <div class="buy-option text-center">
+                                <div class="wishlist">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <div class="add-to-cart-btn">
+                                    <p><i class="fa fa-shopping-bag"></i> add to cart</p>
+                                </div>
+                                <div class="compare">
+                                    <i class="fa fa-signal"></i>
+                                </div>
+                            </div>
+
+
+                            <!-- Quick View Modal -->
+                            <div class="modal quick-view-popup">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <!--<div class="modal-header">
+                                        </div>-->
+                                        <button type="button" class="close-popup" data-dismiss="modal">close &times;</button>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <div class="product-thumb">
+                                                            <div class="exzoom hidden" id="id-2">
+                                                                <!-- Images -->
+                                                                <div class="exzoom_img_box">
+                                                                    <ul class='exzoom_img_ul'>
+                                                                        <li><img src="assets/template-2/images/feat-1.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-2.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-3.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-4.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-5.jpg" /></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <!-- <a href="https://www.jqueryscript.net/tags.php?/Thumbnail/">Thumbnail</a> Nav-->
+                                                                <div class="exzoom_nav"></div>
+                                                                <!-- Nav Buttons -->
+                                                                <p class="exzoom_btn">
+                                                                    <a href="javascript:void(0);" class="exzoom_prev_btn"><i class="fa fa-angle-left"></i></a>
+                                                                    <a href="javascript:void(0);" class="exzoom_next_btn"><i class="fa fa-angle-right"></i></a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <div class="product-details">
+                                                            <div class="product-title">
+                                                                <a href="#"><h4>product title will be appear here</h4></a>
+                                                            </div>
+                                                            <div class="product-rating">
+                                                                <ul>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li><span>(55 review)</span></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="product-description">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias at corporis eos eum fugit, id minus nostrum, perspiciatis qui recusandae sequi totam, vitae. Ad adipisci amet asperiores aut dignissimos enim eos exercitationem facilis laudantium modi nam nihil odio odit officiis, omnis pariatur porro praesentium quos ratione reprehenderit, sit ut!</p>
+                                                            </div>
+                                                            <div class="product-price">
+                                                                <p>price: <del>$ 10.00</del><span>$ 5.00</span></p>
+                                                            </div>
+                                                            <div class="availability">
+                                                                <p>Availability: In stock</p>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <div class="quantity">
+                                                                        <div class="item-counter">
+                                                                            <form>
+                                                                                <div class="minus">
+                                                                                    <i class="fa fa-minus"></i>
+                                                                                </div>
+                                                                                <div class="number-show">
+                                                                                    <div class="form-field">
+                                                                                        <input type="text" class="form-control item_count" value="1">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="plus">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <div class="buy-option text-center">
+                                                                        <div class="wishlist">
+                                                                            <i class="fa fa-heart"></i>
+                                                                        </div>
+                                                                        <div class="add-to-cart-btn">
+                                                                            <p><i class="fa fa-shopping-bag"></i> add to cart</p>
+                                                                        </div>
+                                                                        <div class="compare">
+                                                                            <i class="fa fa-signal"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-feat-product">
+                            <div class="product-thumb">
+                                <img src="assets/template-2/images/feat-3.jpg" alt="">
+                                <div class="notice">
+                                    <p>50% off</p>
+                                </div>
+                                <div class="quick-view-btn">
+                                    <a data-toggle="modal" data-target=".quick-view-popup" href="#"><i class="fa fa-eye"></i>quick view</a>
+                                </div>
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-rating">
+                                    <ul>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><span>(55 review)</span></li>
+                                    </ul>
+                                </div>
+                                <div class="product-title">
+                                    <a href="#"><h4>product title will be appear here</h4></a>
+                                </div>
+                                <div class="product-price">
+                                    <p><del>$ 10.00</del><span>$ 5.00</span></p>
+                                </div>
+                            </div>
+                            <div class="buy-option text-center">
+                                <div class="wishlist">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <div class="add-to-cart-btn">
+                                    <p><i class="fa fa-shopping-bag"></i> add to cart</p>
+                                </div>
+                                <div class="compare">
+                                    <i class="fa fa-signal"></i>
+                                </div>
+                            </div>
+
+
+                            <!-- Quick View Modal -->
+                            <div class="modal quick-view-popup">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <!--<div class="modal-header">
+                                        </div>-->
+                                        <button type="button" class="close-popup" data-dismiss="modal">close &times;</button>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <div class="product-thumb">
+                                                            <div class="exzoom hidden" id="id-3">
+                                                                <!-- Images -->
+                                                                <div class="exzoom_img_box">
+                                                                    <ul class='exzoom_img_ul'>
+                                                                        <li><img src="assets/template-2/images/feat-1.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-2.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-3.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-4.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-5.jpg" /></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <!-- <a href="https://www.jqueryscript.net/tags.php?/Thumbnail/">Thumbnail</a> Nav-->
+                                                                <div class="exzoom_nav"></div>
+                                                                <!-- Nav Buttons -->
+                                                                <p class="exzoom_btn">
+                                                                    <a href="javascript:void(0);" class="exzoom_prev_btn"><i class="fa fa-angle-left"></i></a>
+                                                                    <a href="javascript:void(0);" class="exzoom_next_btn"><i class="fa fa-angle-right"></i></a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <div class="product-details">
+                                                            <div class="product-title">
+                                                                <a href="#"><h4>product title will be appear here</h4></a>
+                                                            </div>
+                                                            <div class="product-rating">
+                                                                <ul>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li><span>(55 review)</span></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="product-description">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias at corporis eos eum fugit, id minus nostrum, perspiciatis qui recusandae sequi totam, vitae. Ad adipisci amet asperiores aut dignissimos enim eos exercitationem facilis laudantium modi nam nihil odio odit officiis, omnis pariatur porro praesentium quos ratione reprehenderit, sit ut!</p>
+                                                            </div>
+                                                            <div class="product-price">
+                                                                <p>price: <del>$ 10.00</del><span>$ 5.00</span></p>
+                                                            </div>
+                                                            <div class="availability">
+                                                                <p>Availability: In stock</p>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <div class="quantity">
+                                                                        <div class="item-counter">
+                                                                            <form>
+                                                                                <div class="minus">
+                                                                                    <i class="fa fa-minus"></i>
+                                                                                </div>
+                                                                                <div class="number-show">
+                                                                                    <div class="form-field">
+                                                                                        <input type="text" class="form-control item_count" value="1">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="plus">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <div class="buy-option text-center">
+                                                                        <div class="wishlist">
+                                                                            <i class="fa fa-heart"></i>
+                                                                        </div>
+                                                                        <div class="add-to-cart-btn">
+                                                                            <p><i class="fa fa-shopping-bag"></i> add to cart</p>
+                                                                        </div>
+                                                                        <div class="compare">
+                                                                            <i class="fa fa-signal"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-feat-product">
+                            <div class="product-thumb">
+                                <img src="assets/template-2/images/feat-4.jpg" alt="">
+                                <div class="notice">
+                                    <p>50% off</p>
+                                </div>
+                                <div class="quick-view-btn">
+                                    <a data-toggle="modal" data-target=".quick-view-popup" href="#"><i class="fa fa-eye"></i>quick view</a>
+                                </div>
+                            </div>
+                            <div class="product-info text-center">
+                                <div class="product-rating">
+                                    <ul>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li class="rated"><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><span>(55 review)</span></li>
+                                    </ul>
+                                </div>
+                                <div class="product-title">
+                                    <a href="#"><h4>product title will be appear here</h4></a>
+                                </div>
+                                <div class="product-price">
+                                    <p><del>$ 10.00</del><span>$ 5.00</span></p>
+                                </div>
+                            </div>
+                            <div class="buy-option text-center">
+                                <div class="wishlist">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <div class="add-to-cart-btn">
+                                    <p><i class="fa fa-shopping-bag"></i> add to cart</p>
+                                </div>
+                                <div class="compare">
+                                    <i class="fa fa-signal"></i>
+                                </div>
+                            </div>
+
+
+                            <!-- Quick View Modal -->
+                            <div class="modal quick-view-popup">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <!--<div class="modal-header">
+                                        </div>-->
+                                        <button type="button" class="close-popup" data-dismiss="modal">close &times;</button>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <div class="product-thumb">
+                                                            <div class="exzoom hidden" id="id-4">
+                                                                <!-- Images -->
+                                                                <div class="exzoom_img_box">
+                                                                    <ul class='exzoom_img_ul'>
+                                                                        <li><img src="assets/template-2/images/feat-1.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-2.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-3.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-4.jpg" /></li>
+                                                                        <li><img src="assets/template-2/images/feat-5.jpg" /></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <!-- <a href="https://www.jqueryscript.net/tags.php?/Thumbnail/">Thumbnail</a> Nav-->
+                                                                <div class="exzoom_nav"></div>
+                                                                <!-- Nav Buttons -->
+                                                                <p class="exzoom_btn">
+                                                                    <a href="javascript:void(0);" class="exzoom_prev_btn"><i class="fa fa-angle-left"></i></a>
+                                                                    <a href="javascript:void(0);" class="exzoom_next_btn"><i class="fa fa-angle-right"></i></a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <div class="product-details">
+                                                            <div class="product-title">
+                                                                <a href="#"><h4>product title will be appear here</h4></a>
+                                                            </div>
+                                                            <div class="product-rating">
+                                                                <ul>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li class="rated"><i class="fa fa-star"></i></li>
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li><span>(55 review)</span></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="product-description">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias at corporis eos eum fugit, id minus nostrum, perspiciatis qui recusandae sequi totam, vitae. Ad adipisci amet asperiores aut dignissimos enim eos exercitationem facilis laudantium modi nam nihil odio odit officiis, omnis pariatur porro praesentium quos ratione reprehenderit, sit ut!</p>
+                                                            </div>
+                                                            <div class="product-price">
+                                                                <p>price: <del>$ 10.00</del><span>$ 5.00</span></p>
+                                                            </div>
+                                                            <div class="availability">
+                                                                <p>Availability: In stock</p>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <div class="quantity">
+                                                                        <div class="item-counter">
+                                                                            <form>
+                                                                                <div class="minus">
+                                                                                    <i class="fa fa-minus"></i>
+                                                                                </div>
+                                                                                <div class="number-show">
+                                                                                    <div class="form-field">
+                                                                                        <input type="text" class="form-control item_count" value="1">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="plus">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <div class="buy-option text-center">
+                                                                        <div class="wishlist">
+                                                                            <i class="fa fa-heart"></i>
+                                                                        </div>
+                                                                        <div class="add-to-cart-btn">
+                                                                            <p><i class="fa fa-shopping-bag"></i> add to cart</p>
+                                                                        </div>
+                                                                        <div class="compare">
+                                                                            <i class="fa fa-signal"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -386,6 +963,27 @@
     </section>
     <!-- featured product area end -->
 
+
+
+  <!--  <div class="exzoom hidden" id="product-zoom">
+        &lt;!&ndash; Images &ndash;&gt;
+        <div class="exzoom_img_box">
+            <ul class='exzoom_img_ul'>
+                <li><img src="assets/template-2/images/feat-1.jpg" /></li>
+                <li><img src="assets/template-2/images/feat-2.jpg" /></li>
+                <li><img src="assets/template-2/images/feat-3.jpg" /></li>
+                <li><img src="assets/template-2/images/feat-4.jpg" /></li>
+                <li><img src="assets/template-2/images/feat-5.jpg" /></li>
+            </ul>
+        </div>
+        &lt;!&ndash; <a href="https://www.jqueryscript.net/tags.php?/Thumbnail/">Thumbnail</a> Nav&ndash;&gt;
+        <div class="exzoom_nav"></div>
+        &lt;!&ndash; Nav Buttons &ndash;&gt;
+        <p class="exzoom_btn">
+            <a href="javascript:void(0);" class="exzoom_prev_btn"><i class="fa fa-angle-left"></i></a>
+            <a href="javascript:void(0);" class="exzoom_next_btn"><i class="fa fa-angle-right"></i></a>
+        </p>
+    </div>-->
 
     <footer class="footer-area gray-bg pt-100 pb-95">
         <div class="container">
@@ -585,8 +1183,32 @@
 <script src="assets/js/main.js"></script>
 
 <!-- template-2 js -->
-
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
 <script src="assets/template-2/js/activation.js"></script>
+<script src="assets/template-2/js/jquery.exzoom.js"></script>
+<script>
+    $(function(){
+        $("#product-zoom").exzoom({
+
+            // thumbnail nav options
+            "navWidth": 60,
+            "navHeight": 60,
+            "navItemNum": 5,
+            "navItemMargin": 7,
+            "navBorder": 1,
+
+            // autoplay
+            "autoPlay": true,
+
+            // autoplay interval in milliseconds
+            "autoPlayTimeout": 2000
+
+        });
+
+    });
+</script>
 </body>
 
 </html>
