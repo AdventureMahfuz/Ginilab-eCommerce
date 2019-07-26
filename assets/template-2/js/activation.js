@@ -36,5 +36,58 @@
             $('.slider-cont h1').addClass('animated fadeInRight').css('opacity', '1');
             $('#template-2-slider .slider-btn-style').addClass('animated fadeInUp').css('opacity', '1');
         });
+
+
+        //featured-product-slider
+        $('#featured-product-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: false,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            nav: false,
+            dots: false,
+            mouseDrag: true,
+            touchDrag: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+
+
+        //popup-product-slier
+        $('.popup-product-slier').owlCarousel({
+            loop: true,
+            margin: 0,
+            autoplay: true,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            nav: false,
+            dots: true,
+            mouseDrag: true,
+            touchDrag: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+
+
+
     });
 })(jQuery);
