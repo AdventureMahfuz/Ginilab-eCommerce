@@ -39,10 +39,10 @@
 
 
         //featured-product-slider
-        $('#featured-product-slider').owlCarousel({
+        $('.product-slider').owlCarousel({
             loop: true,
             margin: 10,
-            autoplay: false,
+            autoplay: true,
             autoplayHoverPause: true,
             responsiveClass: true,
             nav: false,
@@ -87,6 +87,31 @@
             }
         });
 
+
+
+        //blog posts slider
+        $('.blog-posts').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            nav: false,
+            dots: true,
+            mouseDrag: true,
+            touchDrag: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
 
 
     });
