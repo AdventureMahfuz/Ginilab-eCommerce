@@ -35,6 +35,8 @@ body {
     border-bottom: 1px solid #999;
     padding: 20px 0;
     z-index: 9999;
+    left: 0;
+    top: 0;
 }
 
 .logo h1 {
@@ -709,3 +711,40 @@ input.item_count:focus {
     background: var(--primary-color);
 }
 /*blog post area end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+************************************************************************************
+                                CUSTOMER DASHBOARD PAGE
+************************************************************************************
+*/
+.customer-thumb img {
+    width: 175px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+}
+
+.customer-thumb {
+    overflow: hidden;
+}
+
+.customer-thumb p {
+    font-size: 25px;
+    text-transform: capitalize;
+    padding-top: 73px;
+}
