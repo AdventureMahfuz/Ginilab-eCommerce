@@ -758,7 +758,7 @@ input.item_count:focus {
 }
 
 .customer-dashboard-navigation {
-    border-right: 1px solid #ddd;
+    border: 1px solid #ddd;
 }
 
 .customer-dashboard-navigation ul li a i.fa {
