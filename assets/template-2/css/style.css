@@ -29,15 +29,15 @@ body {
 /*common style end*/
 
 /*header style start*/
-.header-area {
-    position: absolute;
-    width: 100%;
-    border-bottom: 1px solid #999;
-    padding: 20px 0;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-}
+/*.header-area {*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*border-bottom: 1px solid #999;*/
+    /*padding: 20px 0;*/
+    /*z-index: 9999;*/
+    /*left: 0;*/
+    /*top: 0;*/
+/*}*/
 
 .logo h1 {
     margin: 0;
@@ -747,4 +747,37 @@ input.item_count:focus {
     font-size: 25px;
     text-transform: capitalize;
     padding-top: 73px;
+}
+
+.customer-dashboard-navigation ul li {
+    width: 100%;
+}
+
+.dashboard-content-area {
+    padding-top: 30px;
+}
+
+.customer-dashboard-navigation {
+    border-right: 1px solid #ddd;
+}
+
+.customer-dashboard-navigation ul li a i.fa {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.customer-dashboard-navigation ul li a {
+    display: block;
+}
+
+.customer-dashboard-navigation ul li a:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.customer-dashboard-navigation ul li a.active {
+    background: var(--primary-color);
+    color: #fff;
 }
