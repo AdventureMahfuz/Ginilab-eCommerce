@@ -163,6 +163,9 @@ body {
 
 .single-promotion-item {
     position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #333;
 }
 
 .promo-cont {
@@ -178,13 +181,14 @@ body {
 .promo-cont:after {
     position: absolute;
     content: "";
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    left: -40px;
+    top: -80px;
+    width: 110%;
+    height: 137%;
     background: #000;
     z-index: -1;
     opacity: .5;
+    transform: rotate(30deg);
 }
 
 .promo-cont h3 {
@@ -709,6 +713,19 @@ input.item_count:focus {
 
 .blog-posts .owl-dot.active span {
     background: var(--primary-color);
+}
+.view-all-btn {
+    width: 100%;
+}
+
+.view-all-btn a {
+    background: var(--primary-color);
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+    margin: 10px;
+    color: #fff;
+    box-shadow: 0 0 10px #666;
 }
 /*blog post area end*/
 
