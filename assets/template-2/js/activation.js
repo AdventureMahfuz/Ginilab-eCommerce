@@ -5,7 +5,7 @@
             animateIn: 'fadeIn',
             animateOut: 'fadeOut',
             loop: true,
-            margin: 10,
+            margin: 100,
             autoplay: true,
             autoplayHoverPause: true,
             responsiveClass: true,

@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="assets/template-2/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/template-2/css/jquery.exzoom.css">
     <link rel="stylesheet" href="assets/template-2/css/style.css">
+    <link rel="stylesheet" href="assets/template-2/css/responsive.css">
     <!-- template 2 assets end -->
 
 
@@ -43,15 +44,54 @@
         <div class="header-area header-area-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-6">
+                    <div class="col-lg-3 col-md-6 col-6">
                         <div class="logo">
                             <a href="index.html">
                                 <h1>template 2</h1>
-                                <!-- <img src="assets/img/logo/logo.png" alt="" /> -->
+                                <!--<img src="assets/img/logo/logo.png" alt="" />-->
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-6">
+                    <div class="col-lg-6 menu-none-block menu-center">
+                        <div class="main-menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="home.com">Home</a>
+                                    </li>
+                                    <li><a href="aboutus.com">About Us</a>
+                                    </li>
+                                    <li><a href="shop">Shop</a>
+                                    </li>
+                                    <li><a href="pages.com">Pages</a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <a href="aboutus.com">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="cart.com">Cart</a>
+                                            </li>
+                                            <li>
+                                                <a href="checkout.com">Checkout</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="blog.com">Blog</a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <a href="blogdetails.com">Blog Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="latestblog.com">Latest Blog</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.com">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
                         <div class="header-search-cart">
                             <div class="header-search common-style">
                                 <button class="sidebar-trigger-search">
@@ -61,12 +101,16 @@
                             <div class="header-cart common-style">
                                 <button class="sidebar-trigger">
                                     <span class="ion-bag"></span>
+                                    <span class="item-count">3</span>
+                                    <!--<span class="badge bg-danger">৳</span>-->
                                 </button>
                             </div>
                             <div class="header-sidebar common-style">
                                 <button class="header-navbar-active">
                                     <span class="ion-navicon"></span>
+
                                 </button>
+
                             </div>
                         </div>
                     </div>
@@ -219,7 +263,7 @@
             <div class="single-slide-item" style="background-image: url('assets/template-2/images/slider-1.3.jpg')">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-10 offset-sm-1">
                             <div class="slider-content">
                                 <div class="cont-center">
                                     <div class="slider-cont">
@@ -286,55 +330,58 @@
             <div class="promotion-items">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="single-promotion-item">
-                            <div class="promo-thumb">
-                                <img src="assets/template-2/images/slider-2.jpg" alt="">
-                            </div>
-                            <div class="promo-cont">
-                                <h3>product title</h3>
-                                <p>
-                                    i'm on sale <br><span>up to 60% off</span>
-                                </p>
-                                <div class="shop-link">
-                                    <a class="btn-hover slider-btn-style animated" href="shop-grid-view-sidebar.html">shop
-                                        now</a>
+                        <a href="#">
+                            <div class="single-promotion-item">
+                                <div class="promo-thumb">
+                                    <img src="assets/template-2/images/promo-1.jpg" alt="">
+                                </div>
+                                <div class="promo-cont">
+                                    <h3>product title</h3>
+                                    <p>
+                                        i'm on sale <br>up to <span>60%</span> off
+                                    </p>
+                                    <div class="btn-hover slider-btn-style shop-btn">
+                                        shop now
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="single-promotion-item">
-                            <div class="promo-thumb">
-                                <img src="assets/template-2/images/slider-5.jpg" alt="">
-                            </div>
-                            <div class="promo-cont">
-                                <h3>product title</h3>
-                                <p>
-                                    i'm on sale <br><span>up to 40% off</span>
-                                </p>
-                                <div class="shop-link">
-                                    <a class="btn-hover slider-btn-style animated" href="shop-grid-view-sidebar.html">shop
-                                        now</a>
+                        <a href="#">
+                            <div class="single-promotion-item">
+                                <div class="promo-thumb">
+                                    <img src="assets/template-2/images/promo-2.jpg" alt="">
+                                </div>
+                                <div class="promo-cont">
+                                    <h3>product title</h3>
+                                    <p>
+                                        i'm on sale <br>up to <span>40%</span> off
+                                    </p>
+                                    <div class="btn-hover slider-btn-style shop-btn">
+                                        shop now
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="single-promotion-item">
-                            <div class="promo-thumb">
-                                <img src="assets/template-2/images/slider-6.jpg" alt="">
-                            </div>
-                            <div class="promo-cont">
-                                <h3>product title</h3>
-                                <p>
-                                    i'm on sale <br><span>up to 70% off</span>
-                                </p>
-                                <div class="shop-link">
-                                    <a class="btn-hover slider-btn-style animated" href="shop-grid-view-sidebar.html">shop
-                                        now</a>
+                        <a href="#">
+                            <div class="single-promotion-item">
+                                <div class="promo-thumb">
+                                    <img src="assets/template-2/images/promo-3.jpg" alt="">
+                                </div>
+                                <div class="promo-cont">
+                                    <h3>product title</h3>
+                                    <p>
+                                        i'm on sale <br>up to <span>70%</span> off
+                                    </p>
+                                    <div class="btn-hover slider-btn-style shop-btn">
+                                        shop now
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -343,7 +390,7 @@
     <!-- promotions area end -->
 
     <!-- featured product area start -->
-    <section class="featured-product-section section padding">
+    <section class="featured-product-section section-padding">
         <div class="container">
             <div class="featured-products">
                 <div class="row">
@@ -355,7 +402,7 @@
                 </div>
                 <div class="row">
                     <div class="featured-items owl-carousel product-slider">
-                        <div class="single-product">
+                        <div class="single-product-item">
                             <div class="product-thumb">
                                 <img src="assets/template-2/images/feat-1.jpg" alt="">
                                 <div class="overlay on-hover"></div>
@@ -488,7 +535,7 @@
                             </div>
                             <!--quick view popup modal end-->
                         </div>
-                        <div class="single-product">
+                        <div class="single-product-item">
                             <div class="product-thumb">
                                 <img src="assets/template-2/images/feat-2.jpg" alt="">
                                 <div class="overlay on-hover"></div>
@@ -625,9 +672,9 @@
                             </div>
                             <!--quick view popup modal end-->
                         </div>
-                        <div class="single-product">
+                        <div class="single-product-item">
                             <div class="product-thumb">
-                                <img src="assets/template-2/images/feat-3.jpg" alt="">
+                                <img src="assets/template-2/images/feat-3.1.jpg" alt="">
                                 <div class="overlay on-hover"></div>
                                 <div class="notice">
                                     <p>50% off</p>
@@ -759,7 +806,7 @@
                             </div>
                             <!--quick view popup modal end-->
                         </div>
-                        <div class="single-product">
+                        <div class="single-product-item">
                             <div class="product-thumb">
                                 <img src="assets/template-2/images/feat-4.jpg" alt="">
                                 <div class="overlay on-hover"></div>
@@ -933,7 +980,7 @@
                 </div>
                 <div class="row">
                     <div class="new-items owl-carousel product-slider">
-                        <div class="single-product">
+                        <div class="single-product-item">
                             <div class="product-thumb">
                                 <img src="assets/template-2/images/feat-1.jpg" alt="">
                                 <div class="overlay on-hover"></div>
@@ -1072,7 +1119,7 @@
                             </div>
                             <!--quick view popup modal end-->
                         </div>
-                        <div class="single-product">
+                        <div class="single-product-item">
                             <div class="product-thumb">
                                 <img src="assets/template-2/images/feat-2.jpg" alt="">
                                 <div class="overlay on-hover"></div>
@@ -1212,7 +1259,7 @@
                             </div>
                             <!--quick view popup modal end-->
                         </div>
-                        <div class="single-product">
+                        <div class="single-product-item">
                             <div class="product-thumb">
                                 <img src="assets/template-2/images/feat-3.1.jpg" alt="">
                                 <div class="overlay on-hover"></div>
@@ -1352,7 +1399,7 @@
                             </div>
                             <!--quick view popup modal end-->
                         </div>
-                        <div class="single-product">
+                        <div class="single-product-item">
                             <div class="product-thumb">
                                 <img src="assets/template-2/images/feat-4.1.jpg" alt="">
                                 <div class="overlay on-hover"></div>
@@ -1532,7 +1579,8 @@
                             </div>
                             <div class="post-excerpt">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque est et nobis, non perferendis vel! At itaque veniam voluptas.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque est et nobis,
+                                    non perferendis vel! At itaque veniam voluptas.
                                 </p>
                             </div>
                         </div>
@@ -1561,7 +1609,8 @@
                             </div>
                             <div class="post-excerpt">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque est et nobis, non perferendis vel! At itaque veniam voluptas.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque est et nobis,
+                                    non perferendis vel! At itaque veniam voluptas.
                                 </p>
                             </div>
                         </div>
@@ -1590,7 +1639,8 @@
                             </div>
                             <div class="post-excerpt">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque est et nobis, non perferendis vel! At itaque veniam voluptas.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque est et nobis,
+                                    non perferendis vel! At itaque veniam voluptas.
                                 </p>
                             </div>
                         </div>
@@ -1619,7 +1669,8 @@
                             </div>
                             <div class="post-excerpt">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque est et nobis, non perferendis vel! At itaque veniam voluptas.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque est et nobis,
+                                    non perferendis vel! At itaque veniam voluptas.
                                 </p>
                             </div>
                         </div>
@@ -1648,7 +1699,8 @@
                             </div>
                             <div class="post-excerpt">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque est et nobis, non perferendis vel! At itaque veniam voluptas.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque est et nobis,
+                                    non perferendis vel! At itaque veniam voluptas.
                                 </p>
                             </div>
                         </div>
@@ -1677,7 +1729,8 @@
                             </div>
                             <div class="post-excerpt">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque est et nobis, non perferendis vel! At itaque veniam voluptas.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque est et nobis,
+                                    non perferendis vel! At itaque veniam voluptas.
                                 </p>
                             </div>
                         </div>
