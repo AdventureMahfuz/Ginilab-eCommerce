@@ -29,6 +29,10 @@ body {
 
 /*header style start*/
 .header-area {
+    padding: 25px 0;
+    border-bottom: 1px solid #ddd;
+}
+.header-area.home-header {
     position: absolute;
     width: 100%;
     border-bottom: 1px solid #999;
@@ -52,7 +56,7 @@ span.item-count {
     font-weight: 900;
 }
 
-.header-area:after {
+.header-area.home-header:after {
     position: absolute;
     content: "";
     left: 0;
