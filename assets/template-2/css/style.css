@@ -8,7 +8,12 @@ body {
 :root {
     --primary-color: #EE3333
 }
-
+.logo img, .footer-logo img {
+    width: initial;
+}
+img {
+    width: 100%;
+}
 /*Default style end*/
 
 /*common style start*/
@@ -27,11 +32,18 @@ body {
 
 /*common style end*/
 
+/*
+************************************************************************************
+                                FRONT PAGE START
+************************************************************************************
+*/
+
 /*header style start*/
 .header-area {
     padding: 25px 0;
     border-bottom: 1px solid #ddd;
 }
+
 .header-area.home-header {
     position: absolute;
     width: 100%;
@@ -41,14 +53,17 @@ body {
     left: 0;
     top: 0;
 }
+
 span.item-count {
     min-width: 45px;
     top: -30px;
 }
+
 .main-menu ul li a {
     font-weight: 400;
     line-height: 40px;
 }
+
 .logo h1 {
     margin: 0;
     text-transform: capitalize;
@@ -172,10 +187,12 @@ span.item-count {
     transform: scale(1.0);
     transition: all .5s;
 }
-.single-promotion-item:hover .promo-thumb img{
+
+.single-promotion-item:hover .promo-thumb img {
     transform: scale(1.2);
     transition: all .5s;
 }
+
 .single-promotion-item {
     position: relative;
     border-radius: 5px;
@@ -223,10 +240,12 @@ span.item-count {
     padding: 0 3px;
     font-size: large;
 }
+
 .slider-btn-style.shop-btn {
     padding: 10px 15px;
     color: #fff;
 }
+
 /*promotions area end*/
 
 /*featured area start*/
@@ -240,7 +259,6 @@ span.item-count {
     overflow: hidden;
     position: relative;
 }
-
 .overlay.on-hover {
     height: 0;
     bottom: 0;
@@ -426,6 +444,7 @@ span.item-count {
     text-transform: capitalize;
     color: #ffffff;
 }
+
 .product-slider .owl-dots {
     position: absolute;
     left: 50%;
@@ -703,11 +722,13 @@ input.item_count:focus {
     display: block;
     padding: 5px 0;
 }
+
 .single-post:hover .overlay.on-hover {
     height: 100%;
     visibility: visible;
     transition: all .5s;
 }
+
 .blog-posts .owl-dots {
     position: absolute;
     left: 50%;
@@ -727,6 +748,7 @@ input.item_count:focus {
 .blog-posts .owl-dot.active span {
     background: var(--primary-color);
 }
+
 .view-all-btn {
     width: 100%;
 }
@@ -740,22 +762,65 @@ input.item_count:focus {
     color: #fff;
     box-shadow: 0 0 10px #666;
 }
+
 /*blog post area end*/
 
+/*
+************************************************************************************
+                                FRONT PAGE END
+************************************************************************************
+*/
 
+/*
+************************************************************************************
+                                SHOP PAGE START
+************************************************************************************
+*/
+.list-view-single-product:hover .quick-view-btn {
+    top: 50%;
+}
+.list-view-single-product:hover .overlay.on-hover{
+    height: 100%;
+    visibility: visible;
+}
+.list-view-single-product:hover .notice {
+    right: 0;
+}
+.product-title.list-view h4 {
+    color: #3e3e3e;
+    font-weight: 700;
+    font-size: 20px;
+}
 
+.list-view-wishlist {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    font-size: 25px;
+    color: var(--primary-color);
+}
 
+.add-to-cart-btn.list-view {
+    float: left;
+    margin-right: 10px;
+}
 
+.list-view-compare {
+    display: inline-block;
+    font-size: 25px;
+    color: var(--primary-color);
+}
 
+.list-view-single-product {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
 
-
-
-
-
-
-
-
-
+/*
+************************************************************************************
+                                SHOP PAGE END
+************************************************************************************
+*/
 
 /*
 ************************************************************************************
@@ -811,3 +876,9 @@ input.item_count:focus {
     background: var(--primary-color);
     color: #fff;
 }
+
+/*
+************************************************************************************
+                                CUSTOMER DASHBOARD PAGE END
+************************************************************************************
+*/
