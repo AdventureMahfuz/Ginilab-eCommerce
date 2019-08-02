@@ -882,3 +882,119 @@ input.item_count:focus {
                                 CUSTOMER DASHBOARD PAGE END
 ************************************************************************************
 */
+
+/*
+************************************************************************************
+                                PRODUCT DETAILS PAGE START
+************************************************************************************
+*/
+.social-share ul li {
+    display: inline-block;
+    text-transform: capitalize;
+    margin-right: 15px;
+}
+
+.social-share {
+    padding: 15px 0;
+}
+
+.social-share ul li i.fa {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.social-share ul li i.fa:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transition: all .5s;
+}
+.product-price p span.off-limit {
+    font-size: 14px;
+    border: 1px solid var(--primary-color);
+    padding: 0 5px;
+    margin-left: 20px;
+}
+
+.product-price p.offer-label {
+    font-size: 12px;
+    font-style: italic;
+    padding-bottom: 15px;
+    padding-top: 0;
+    margin-top: -5px;
+}
+.product-info {
+    overflow: hidden;
+}
+.product-size {
+    padding: 15px 0;
+}
+
+.product-size ul li {
+    text-transform: capitalize;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.product-size ul li span {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    width: 25px;
+    height: 25px;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 400;
+    transition: all .5s;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.product-size ul li span:hover {
+    color: #fff;
+    background: var(--primary-color);
+    transition: all .5s;
+}
+
+.product-colors ul li {
+    text-transform: capitalize;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.product-colors ul li span {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    display: block;
+    cursor: pointer;
+}
+
+.product-colors ul li span.white{
+    background: white;
+}
+.product-colors ul li span.red{
+    background: red;
+}
+.product-colors ul li span.green{
+    background: green;
+}
+.product-colors ul li span.blue{
+    background: blue;
+}
+.product-colors ul li span.gray{
+    background: gray;
+}
+.availability p{
+    text-transform: capitalize;
+}
+/*
+************************************************************************************
+                                PRODUCT DETAILS PAGE END
+************************************************************************************
+*/
