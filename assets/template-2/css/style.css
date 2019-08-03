@@ -15,7 +15,13 @@ img {
     width: 100%;
 }
 /*Default style end*/
-
+.about-single-service img {
+    width: initial;
+}
+.single-post.blogpage {
+    margin: initial;
+    margin-bottom: 35px;
+}
 /*common style start*/
 .section-title h1 {
     text-transform: capitalize;
@@ -992,6 +998,98 @@ input.item_count:focus {
 }
 .availability p{
     text-transform: capitalize;
+}
+
+.product-tab ul li a.active {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.product-tab ul li a {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 25px;
+    padding-right: 20px;
+}
+.description {}
+
+.product-tab .tab-content {
+    margin-top: 20px;
+}
+
+.description p {
+    /* font-size: 16px; */
+    /* line-height: 30px; */
+    /* color: gray; */
+}
+
+.description ul li i.fa {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.description ul li {
+    font-style: italic;
+    font-size: 16px;
+}
+
+.description ul {
+    margin-bottom: 15px;
+}
+.single-review p i.fa {
+    color: var(--primary-color);
+    padding: 10px;
+}
+
+.single-review span {
+    text-transform: capitalize;
+}
+
+.single-review h4 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-style: italic;
+}
+.review-rating-area {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.review-rating-area p {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    line-height: 35px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.review-form input.form-control:focus {box-shadow: initial;border: 1px solid gray;}
+
+.review-form input.form-control {
+    text-transform: capitalize;
+}
+
+button.review-submit-btn {
+    float: right;
+    border: initial;
+    background: var(--primary-color);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 15px;
+    box-shadow: 0 0 10px #999;
+    border-radius: 5px;
+}
+
+.review-submit-area h4 {
+    color: gray;
+    font-weight: 300;
+}
+.sale-widget img {
+    box-shadow: 0 0 10px #999;
+    border-radius: 10px;
 }
 /*
 ************************************************************************************

@@ -4793,6 +4793,7 @@ h3.leave-comment-text {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   z-index: 999;
+  border-radius: 30px;
 }
 
 .contact-info {

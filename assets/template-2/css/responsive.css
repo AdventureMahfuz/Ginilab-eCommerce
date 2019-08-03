@@ -269,6 +269,14 @@
         padding: 30px 0;
     }
     /*shop page end*/
+    /*product details page start*/
+    .exzoom{
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    /*product details page end*/
 }
 
 /*Wide Mobile Layout: 480px*/

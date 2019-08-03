@@ -116,6 +116,30 @@
             }
         });
 
+        //review-slide
+        $('.review-slide').owlCarousel({
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            nav: false,
+            dots: false,
+            mouseDrag: true,
+            touchDrag: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+
 
     });
 })(jQuery);
