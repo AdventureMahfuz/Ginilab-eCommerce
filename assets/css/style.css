@@ -450,8 +450,12 @@ span.item-count:after {
 .cur-lang-acc-dropdown li {
   margin-bottom: 9px;
 }
+.cur-lang-acc-title span img {
+  width: initial;
+}
 .cur-lang-acc-dropdown li a img {
   margin-right: 5px;
+  width: initial;
 }
 .cur-lang-acc-dropdown li:last-child {
   margin-bottom: 0px;
