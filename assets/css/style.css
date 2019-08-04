@@ -458,7 +458,7 @@ span.item-count:after {
   width: initial;
 }
 .cur-lang-acc-dropdown li:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .cur-lang-acc-dropdown ul li a {
   text-transform: capitalize;

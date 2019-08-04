@@ -20,7 +20,7 @@ img {
 }
 .single-post.blogpage {
     margin: initial;
-    margin-bottom: 35px;
+    margin-bottom: 80px;
 }
 /*common style start*/
 .section-title h1 {
@@ -35,9 +35,56 @@ img {
 .section-padding {
     padding: 50px 0;
 }
+.theme-btn a {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+    padding: 10px 25px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+}
 
+.theme-btn a:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 30px;
+    display: inline-block;
+    z-index: -1;
+    transition: all .5s;
+}
+.theme-btn a:hover{
+    color: #fff;
+    transition: all .5s;
+}
+.theme-btn a:hover:after {
+    width: 100%;
+    transition: all .5s;
+}
 /*common style end*/
+/*breadcrumb area start*/
+.breadcrumbs ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 20px 0;
+    color: var(--primary-color);
+    font-style: italic;
+}
 
+.breadcrumb-area {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/*breadcrumb area end*/
 /*
 ************************************************************************************
                                 FRONT PAGE START
@@ -45,6 +92,15 @@ img {
 */
 
 /*header style start*/
+.header-area.sticky_top_section {
+    position: fixed !important;
+    background: #fff;
+    width: 100%;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 10px #9999;
+}
 .header-area {
     padding: 25px 0;
     border-bottom: 1px solid #ddd;
@@ -88,7 +144,15 @@ span.item-count {
     opacity: .6;
     z-index: -1;
 }
-
+.main-menu ul li.active a {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.main-menu ul li a:hover {
+    color: var(--primary-color);
+    font-weight: 700;
+    transition: all .5s;
+}
 /*header style end*/
 
 /*slider area start*/
@@ -650,7 +714,7 @@ input.item_count:focus {
 /*blog post area start*/
 .single-post {
     box-shadow: 0 -5px 10px #C8D6E5;
-    margin: 50px 10px 0;
+    margin: 50px 10px 75px;
 }
 
 .post-content-area {
@@ -759,14 +823,8 @@ input.item_count:focus {
     width: 100%;
 }
 
-.view-all-btn a {
-    background: var(--primary-color);
-    display: inline-block;
-    padding: 0 15px;
-    text-transform: uppercase;
-    margin: 10px;
-    color: #fff;
-    box-shadow: 0 0 10px #666;
+.blog-posts {
+    margin-bottom: 60px;
 }
 
 /*blog post area end*/
@@ -1094,5 +1152,55 @@ button.review-submit-btn {
 /*
 ************************************************************************************
                                 PRODUCT DETAILS PAGE END
+************************************************************************************
+*/
+
+/*
+************************************************************************************
+                                CONTACT US PAGE START
+************************************************************************************
+*/
+.contact-information {
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-10%, -50%);
+}
+
+.contact-map-area {
+    position: relative;
+}
+
+.contact-information:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    content: "";
+    opacity: .7;
+}
+.single-contact-info {
+    margin: 25px;
+}
+
+.contact-info-icon i {
+    color: #fff;
+    border-color: #fff;
+}
+
+.contact-info-content p {
+    color: #fff;
+}
+.contact-info-content p a {
+    color: #fff;
+}
+/*
+************************************************************************************
+                                CONTACT US PAGE END
 ************************************************************************************
 */
