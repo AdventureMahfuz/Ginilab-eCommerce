@@ -149,6 +149,33 @@
             }
         });
 
+        //mobile menu custom js
+        $(".mobile-home-btn").on("click", function () {
+            $("html").animate({
+                scrollTop: 0
+            }, 800);
+        });
+        $(".mobile-menu-btn").on("click", function () {
+            $('ul.mobile-menu').css({
+                'right': '0',
+                'opacity': '1',
+                'transition': 'all .5s',
+            });
+        });
+        $("#close").on("click", function () {
+            $('ul.mobile-menu').css({
+                'right': '-100%',
+                'opacity': '0',
+                'transition': 'all .8s',
+            });
+        });
+        $("ul.mobile-menu li a").on("click", function () {
+            $('ul.mobile-menu').css({
+                'right': '-100%',
+                'opacity': '0',
+                'transition': 'all .8s',
+            });
+        });
 
     });
 })(jQuery);

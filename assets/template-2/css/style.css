@@ -15,6 +15,8 @@ img {
     width: 100%;
 }
 /*Default style end*/
+
+/*Override style start*/
 .about-single-service img {
     width: initial;
 }
@@ -22,6 +24,62 @@ img {
     margin: initial;
     margin-bottom: 80px;
 }
+.cart-btn-style{
+    border-radius: 30px;
+    float: left;
+    padding: 15px 38px;
+}
+.product-name, .cart-subtotal th, .order-total th{
+    text-align: left !important;
+    padding-left: 10px !important;
+}
+
+.product-total, .cart-subtotal td, .order-total td{
+    text-align: right !important;
+    padding-right: 10px !important;
+}
+.your-order-table table th, .your-order-table table td{
+    border-color: #ddd;
+}
+.your-order-table table th, .your-order-table table td{
+    border-right: 1px solid #ddd;
+}
+.your-order-table table th{
+    border-top: 1px solid #ddd;
+}
+.your-order-table table .order-total th{
+    border-bottom: 1px solid #ddd;
+}
+.your-order-table table {
+    border-bottom: 1px solid #ddd;
+}
+.your-order-table table tr th {
+    font-weight: 700;
+    font-size: 18px;
+}
+.your-order h3 {
+    text-align: center;
+}
+.coupon-accordion h4 span {
+    font-style: italic;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.coupon-accordion h4 {
+    padding: 5px 0;
+    text-align: center;
+}
+.country-selects select {
+    -moz-appearance: none;
+    border: 1px solid #ddd;
+    height: 32px;
+    padding-left: 10px;
+    width: 100%;
+    background-color: transparent;
+}
+/*Override style end*/
+
 /*common style start*/
 .section-title h1 {
     text-transform: capitalize;
@@ -69,6 +127,97 @@ img {
     transition: all .5s;
 }
 /*common style end*/
+
+/*mobile menubar start*/
+.mobile-view-order-btn a {
+    text-align: center;
+    display: block;
+    background: var(--theme-color);
+    padding: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 35px;
+    border-radius: 30px;
+}
+.mobile-view-order-btn{
+    display: none;
+}
+.mobile-logo-area{
+    display: none;
+}
+.mobile-logo-area a img{
+    width: initial;
+}
+.sticky-area-mobile-view {
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    background: var(--primary-color);
+    width: 100%;
+    height: 65px;
+}
+.mobile-menu-btn i.fa {
+    font-size: 27px;
+}
+.mobile-sticky-bar-common-style{
+    width: 20%;
+    float: left;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.mobile-sticky-bar-common-style i.fa {
+    color: #fff;
+    font-size: 22px;
+}
+
+.mobile-sticky-bar-common-style p {
+    color: #fff;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    margin-top: -3px;
+}
+.sticky-area-mobile-view{
+    display: none;
+}
+ul.mobile-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: var(--primary-color);
+    position: fixed;
+    bottom: 65px;
+    right: -100%;
+    z-index: 9999;
+    width: 100%;
+    opacity: 0;
+    overflow: auto;
+    height: 55%;
+    transition: all .5s;
+}
+ul.mobile-menu li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #F5F5F6;
+    text-decoration: none;
+    transition: all .5s;
+}
+#close {
+    position: absolute;
+    right: 9px;
+    top: 3px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: 2px;
+}
+/*mobile menubar end*/
+
 /*breadcrumb area start*/
 .breadcrumbs ul li {
     display: inline-block;
@@ -172,7 +321,7 @@ span.item-count {
 .single-slide-item {
     height: 100vh;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 }
 
 .slider-content {
@@ -725,8 +874,9 @@ input.item_count:focus {
 
 /*blog post area start*/
 .single-post {
-    box-shadow: 0 -5px 10px #C8D6E5;
+    box-shadow: 0 0 10px #C8D6E5;
     margin: 50px 10px 75px;
+    padding-bottom: 15px;
 }
 
 .post-content-area {
@@ -792,8 +942,13 @@ input.item_count:focus {
     color: #333;
     font-weight: 300;
 }
+.post-excerpt a {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--primary-color);
+}
 
-.more-link {
+/*.more-link {
     text-align: center;
     background: var(--primary-color);
 }
@@ -803,7 +958,7 @@ input.item_count:focus {
     text-transform: uppercase;
     display: block;
     padding: 5px 0;
-}
+}*/
 
 .single-post:hover .overlay.on-hover {
     height: 100%;
@@ -835,9 +990,6 @@ input.item_count:focus {
     width: 100%;
 }
 
-.blog-posts {
-    margin-bottom: 60px;
-}
 
 /*blog post area end*/
 
