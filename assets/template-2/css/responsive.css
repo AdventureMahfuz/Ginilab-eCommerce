@@ -165,6 +165,18 @@
         font-size: 30px;
     }
 
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .main-menu ul li {
+        margin: 0 2px;
+    }
+
+    .main-menu ul li a {
+        font-size: 14px;
+    }
+
     /*shop page start*/
     .new-arrival.list-view {
         left: -38px;
@@ -205,7 +217,19 @@
         display: none !important;
     }
 
+    .header-area.home-header {
+        position: initial;
+    }
+
+    .slider-content {
+        height: initial;
+    }
+
     footer.footer-area {
+        display: none;
+    }
+
+    .col-md-6.menu-center {
         display: none;
     }
 
@@ -223,13 +247,13 @@
 
     #template-2-slider .owl-dots {
         top: initial;
-        bottom: 0;
+        bottom: -10px;
         right: 50%;
         transform: translate(10px, 10px) rotateZ(90deg);
     }
 
     .single-slide-item {
-        height: 90vh;
+        height: 35vh;
     }
 
     .slider-cont {
@@ -409,5 +433,9 @@
 
     .post-excerpt p {
         font-size: 16px;
+    }
+
+    .single-slide-item {
+        height: 65vh;
     }
 }

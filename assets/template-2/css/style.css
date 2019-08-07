@@ -321,7 +321,7 @@ span.item-count {
 .single-slide-item {
     height: 100vh;
     background-size: cover;
-    background-position: center center;
+    background-position: right center;
 }
 
 .slider-content {
