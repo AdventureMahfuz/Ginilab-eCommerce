@@ -132,7 +132,7 @@ img {
 .mobile-view-order-btn a {
     text-align: center;
     display: block;
-    background: var(--primary-color);
+    background: var(--theme-color);
     padding: 15px;
     color: #fff;
     text-transform: uppercase;
