@@ -1,0 +1,83 @@
+/*Medium Layout: 1280*/
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .logo img {
+        width: 120px;
+        height: 120px;
+    }
+    .logo h3 {
+        font-size: 25px;
+    }
+    .navigation h3 {
+        font-size: 20px;
+    }
+}
+
+/*Tablet Layout: 768px*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+body{
+    font-size: 18px;
+    line-height: 25px;
+}
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+    .logo h3 {
+        font-size: 20px;
+    }
+    .navigation h3 {
+        font-size: 16px;
+    }
+    .navigation ul li a {
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+    .heading-content p {
+        padding: 0 50px;
+        font-size: 16px;
+    }
+}
+
+/*Mobile Layout: 320px*/
+@media only screen and (max-width: 767px) {
+    body{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .position-style {
+        position: initial;
+        margin-bottom: 30px;
+    }
+    .navigation ul{
+        margin-bottom: 40px;
+    }
+    .navigation ul li a {
+        padding: 8px 0;
+    }
+    .heading-content h2 {
+        font-size: 18px;
+    }
+    .heading-content p {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .heading-content h2 {
+        font-size: 18px;
+    }
+    .heading-content p {
+        font-size: 14px;
+        padding: 0;
+    }
+    .section-title h2 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    p.conclusion{
+        text-align: center;
+    }
+}
+/*Wide Mobile Layout: 480px*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
