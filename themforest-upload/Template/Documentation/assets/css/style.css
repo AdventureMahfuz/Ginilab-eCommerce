@@ -149,3 +149,19 @@ img{
     color: red;
 }
 /*file structure section end*/
+
+/*features section start*/
+.features ol {
+    list-style: none;
+}
+.features ol li {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.features ol li:last-child {
+    border-bottom: initial;
+}
+/*features section end*/
