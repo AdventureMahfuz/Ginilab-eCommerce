@@ -1104,7 +1104,9 @@ input.item_count:focus {
     background: var(--primary-color);
     color: #fff;
 }
-
+.checkout-form-list img {
+    width: 300px;
+}
 /*
 ************************************************************************************
                                 CUSTOMER DASHBOARD PAGE END
